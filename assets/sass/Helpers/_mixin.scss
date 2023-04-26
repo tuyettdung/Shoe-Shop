@@ -1,0 +1,44 @@
+.background-primary{
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+
+// ----------------Mixin----------------
+@mixin text($fs: $text-base, $fw: $text-regular, $fc: $text-c1-dark) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc;
+  }
+  
+  ;
+  
+  @mixin res-sm {
+    @media (max-width: #{$sm}) {
+      @content;
+    }
+  }
+  
+  @mixin res-md {
+    @media (max-width: #{$md}) {
+      @content;
+    }
+  }
+  
+  @mixin res-lg {
+    @media (max-width: #{$lg}) {
+      @content;
+    }
+  }
+  
+  @mixin res-xl {
+    @media (max-width: #{$xl}) {
+      @content;
+    }
+  }
+  
+  @mixin res-xxl {
+    @media (max-width: #{$xxl}) {
+      @content;
+    }
+  }
+  
