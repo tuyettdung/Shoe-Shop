@@ -1,9 +1,23 @@
 .background-primary{
-    background-color: #d9e4f5;
-    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    background-color: $bg-c1-primary;
+    background-image: $bg-c1-gradient;
+}
+
+.btnBuyGrad{
+  padding: 8px 18px ;
+  color: $text-c1-light;
+  background-color: $bg-c1-third;
+  background-image:$bg-c2-gradient;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover{
+    color: $text-c1-primary;
+  background-image:$bg-c3-gradient;
+  }
 }
 
 // ----------------Mixin----------------
+
 @mixin text($fs: $text-base, $fw: $text-regular, $fc: $text-c1-dark) {
     font-size: $fs;
     font-weight: $fw;

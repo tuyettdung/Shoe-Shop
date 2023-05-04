@@ -1,39 +1,50 @@
 .carousel{
     @extend .background-primary;
+    
+    .carousel_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
 
+        }
+        .content_inner{
+            h3{
+
+            }
+            p {
+
+            }
+            button{
+
+            }
+        }
+
+    }
 }
 
-.products{
-    @extend .background-primary;
+#products{
     .prod-item{
         .card{
-            background-color: transparent;
-            color: black;
-           border: 1px #c77cf3 solid;
+            color: $text-c1-dark;
+            background-color: $bg-c1-light;
+            border: 1px #c77cf3 solid;
             .card-header{
-                background-color: rgba(70, 65, 65, 0.178);
-                
-               
                 img{
-                    
                     transform: rotateY(3.142rad) rotateZ(345deg);
                 }
             }
             .card-body{
-                background-color: #fffffff5;
             }
             .card-footer{
-                background-color: #fff;
+                color: rgb(103, 64, 153);
+                font-size:$text-2xl ;
+                font-weight:$text-semibold ;
                 border: none;
-                
                 .btnBuy{
-                    padding: 8px 18px ;
-                    cursor: pointer;
-                    color: white;
-                    background-color: #663dff;
-                    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
-                    ;
-                    border-radius: 5px;
+                    @extend .btnBuyGrad;
+                    font-size: $text-base;
+                    font-weight: $text-regular;
                 }
     
             }

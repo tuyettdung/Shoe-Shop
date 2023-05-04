@@ -1,51 +1,38 @@
 footer {
+    margin-top: 40px;
     .bg-wrap {
-        padding: 2rem 0;
+        padding: 25px 0;
+        &:first-child{
+            background-color: $bg-c2-light ;
+        }
         &:last-child{
             background-color: $bg-c4-dark;
         }
         .container {
             .row {
                 .col-item {
-                    @include res-md{
-                        margin-bottom: 1.5rem;
-                    }
                     .col-content {
-                        position: relative;
-                        &::before{
-                            content: '';
-                            position: absolute;
-                            border-radius: 50px;
-                            border: 1px solid $bg-c3-dark;
-                            height: 100%;
-                            top: 0;
-                            left: -25px
-                            
-                        }
                         h3 {
-                            @include text(1.8rem,$text-bold,$text-c1-dark);
+                            @include text($text-2xl,$text-bold,$text-c1-dark);
                         }
 
                         .tags-list {
-                            padding-bottom: 1rem;
-                            @include res-md{
-                                padding-bottom: 0;
-                            }
                             .tag {
                                 &:first-child{
                                     margin-top: 0;
                                 }
                                 line-height: 1;
                                 margin: 0.3rem 0;
-                                // @include res-md{
-                                //     margin: 0.5rem 0;
-                                // }
+                               
                                 a {
-                                    @include text(0.9rem,$text-regular,$text-c1-dark);
-                                    @include res-md{
-                                        margin: 0.5rem 0;
+                                    @include text($text-base,$text-regular,$text-c1-dark);
+                                    line-height: 1.5;
+                                    &:hover {
+                                        font-weight: $text-semibold;
                                     }
+                                    
                                 }
+                               
                             }
                         }
                         p{
