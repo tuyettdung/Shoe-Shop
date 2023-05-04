@@ -13,6 +13,9 @@
             
                 .form-left {
                     margin-left: 100px;
+                    @media screen and (max-width:992px) {
+                        margin-left: 0;
+                    }
                    
                     input {
                         border: none;
@@ -27,6 +30,10 @@
     
                 .form-right {
                     margin-right: 100px;
+                    @media screen and (max-width:992px) {
+                        margin-right: 0px;
+                        margin-top: 50px;
+                    }
                     input {
                         border: none;
                         border-bottom: 2px solid $text-c1-purple;

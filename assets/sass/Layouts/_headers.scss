@@ -4,7 +4,13 @@ header {
       a {
         i {
             font-size: 30px;
+            @media screen and (max-width:768px) {
+                font-size: 22px; 
+            }
         }
+      }
+      .navbar-toggler{
+
       }
       .collapse {
         ul {
@@ -26,7 +32,7 @@ header {
           }
           button {
             margin: 0 4px;
-            padding: 6px 12px;
+            padding: 7px 12px;
             background-color: $bg-c1-primary;
             background-image: $bg-c1-gradient;
             border-radius: 5px;
