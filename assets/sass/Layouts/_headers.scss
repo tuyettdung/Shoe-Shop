@@ -1,0 +1,44 @@
+header {
+  nav {
+    .container {
+      a {
+        i {
+            font-size: 30px;
+        }
+      }
+      .collapse {
+        ul {
+          li {
+            
+            a {
+                margin: 0 4px;
+              @include text($text-xl, $text-regular, $text-c1-dark);
+              &:hover {
+                @include text($text-xl, $text-semibold, $text-c1-dark);
+              }
+            }
+          }
+        }
+        .header-btn {
+          i {
+            margin-right: 10px;
+            font-size: 20px;
+          }
+          button {
+            margin: 0 4px;
+            padding: 6px 12px;
+            background-color: $bg-c1-primary;
+            background-image: $bg-c1-gradient;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              color: $text-c1-primary;
+              background-image: $bg-c3-gradient;
+            }
+          }
+        }
+      }
+    }
+  }
+}

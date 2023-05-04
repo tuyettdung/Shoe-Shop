@@ -51,6 +51,38 @@ p {
   background-image: linear-gradient(216deg, #a994f7 0%, #9f4dc9 37%, #ec7fc2 100%);
 }
 
+header nav .container a i {
+  font-size: 30px;
+}
+header nav .container .collapse ul li a {
+  margin: 0 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+header nav .container .collapse ul li a:hover {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+header nav .container .collapse .header-btn i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+header nav .container .collapse .header-btn button {
+  margin: 0 4px;
+  padding: 6px 12px;
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+header nav .container .collapse .header-btn button:hover {
+  color: #e0f80c;
+  background-image: linear-gradient(216deg, #a994f7 0%, #9f4dc9 37%, #ec7fc2 100%);
+}
+
 footer {
   margin-top: 40px;
 }
